@@ -14,14 +14,14 @@ struct MainTabView: View {
             
                 .tabItem {
                     Image(systemName: "house")
-                    Text("Feed")
+                    
                 }
             
             Text("Search")
             
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-                    Text("Feed")
+                    
                 }
 
             
@@ -29,23 +29,19 @@ struct MainTabView: View {
             
                 .tabItem {
                     Image(systemName: "plus.square")
-                    Text("Feed")
+                    
                 }
 
             Text("Notification")
             
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Feed")
-                }
-
-            
-            Text("Profile")
-            
-            
-                .tabItem {
                     Image(systemName: "heart")
-                    Text("Feed")
+                    
+                }
+          ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                   
                 }
         }
         .accentColor(.black)
