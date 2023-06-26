@@ -85,8 +85,19 @@ struct ProfileView: View {
                             .aspectRatio(contentMode: .fill)
                     }
                 }
-                
-                
+            }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        ()
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(Color.black)
+                    }
+                    
+                }
             }
         }
     }
