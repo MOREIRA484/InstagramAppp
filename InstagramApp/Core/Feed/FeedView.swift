@@ -9,7 +9,13 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            LazyVStack(spacing: 24){
+                ForEach(0 ... 4, id: \.self) { post in
+                    FeedCell()
+                }
+            }
+        }
     }
 }
 

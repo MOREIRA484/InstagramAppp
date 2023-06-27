@@ -17,7 +17,7 @@ struct FeedCell: View {
                 Image("leonardo")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 50, height: 50)
                     .cornerRadius(40)
                 
                 Text("Moreira")
@@ -28,12 +28,12 @@ struct FeedCell: View {
                 
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
+            .padding(.leading, 10)
             
             
             //POST IMAGE
             
-            Image("imagem")
+            Image("Marvel")
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -93,7 +93,7 @@ struct FeedCell: View {
                     Text("Moreira")
                         .fontWeight(.semibold) +
                 
-                 Text("CÉU ESTRELADO")
+                 Text("Spider-Man")
                 
             }
             .frame(maxWidth: .infinity, alignment: .leading)
