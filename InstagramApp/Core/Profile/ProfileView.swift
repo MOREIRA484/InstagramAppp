@@ -79,8 +79,8 @@ struct ProfileView: View {
                 
                 LazyVGrid(columns: gridItems, spacing: 0.5) {
                     
-                    ForEach(0...8, id: \.self) { index in
-                        Image("leonardo")
+                    ForEach(0...11, id: \.self) { index in
+                        Image("Foto")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                     }

@@ -28,8 +28,16 @@ struct FeedView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Image(systemName: "paperplane")
-                        .imageScale(.large)
+                    
+                    Button {
+                        print("compartilhar")
+                    } label: {
+                        Image(systemName: "paperplane")
+                            .imageScale(.large)
+                            .foregroundColor(Color.black)
+                    }
+
+                    
                 }
             }
         }
