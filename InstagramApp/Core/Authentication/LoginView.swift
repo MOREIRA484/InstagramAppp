@@ -94,7 +94,7 @@ struct LoginView: View {
                     Divider()
                     
                     NavigationLink {
-                        Text("Sign up")
+                        addEmailView()
                     } label: {
                         HStack{
                             Text("Dont't have an account?")
