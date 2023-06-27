@@ -17,6 +17,7 @@
 		8EB175202A4A693D00D99FBA /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1751F2A4A693D00D99FBA /* FeedView.swift */; };
 		8EB175222A4A696700D99FBA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175212A4A696700D99FBA /* FeedCell.swift */; };
 		8EB175242A4B463900D99FBA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175232A4B463900D99FBA /* SearchView.swift */; };
+		8EB175262A4B4DED00D99FBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175252A4B4DED00D99FBA /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8EB1751F2A4A693D00D99FBA /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		8EB175212A4A696700D99FBA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		8EB175232A4B463900D99FBA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8EB175252A4B4DED00D99FBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		8EB175112A49E83400D99FBA /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				8EB175252A4B4DED00D99FBA /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				8EB175222A4A696700D99FBA /* FeedCell.swift in Sources */,
 				8EB1751B2A49ECF800D99FBA /* ProfileView.swift in Sources */,
 				8E39D0622A49E30E008D3659 /* ContentView.swift in Sources */,
+				8EB175262A4B4DED00D99FBA /* LoginView.swift in Sources */,
 				8E39D0602A49E30E008D3659 /* InstagramAppApp.swift in Sources */,
 				8EB175242A4B463900D99FBA /* SearchView.swift in Sources */,
 				8EB1751E2A49F53300D99FBA /* UserStatView.swift in Sources */,
