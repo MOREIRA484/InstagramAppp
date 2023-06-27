@@ -9,10 +9,26 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        ScrollView{
-            LazyVStack(spacing: 24){
-                ForEach(0 ... 4, id: \.self) { post in
-                    FeedCell()
+        NavigationStack {
+            ScrollView{
+                LazyVStack(spacing: 24){
+                    ForEach(0 ... 4, id: \.self) { post in
+                        FeedCell()
+                    }
+                }
+            }
+            .navigationTitle("Feed")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 100, height: 32 )
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Image(systemName: "paperplane")
+                        .imageScale(.large)
                 }
             }
         }
