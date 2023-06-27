@@ -16,6 +16,7 @@ struct FeedView: View {
                         FeedCell()
                     }
                 }
+                .padding(.top)
             }
             .navigationTitle("Feed")
             .navigationBarTitleDisplayMode(.inline)
