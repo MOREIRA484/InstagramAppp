@@ -20,6 +20,7 @@
 		8EB175262A4B4DED00D99FBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175252A4B4DED00D99FBA /* LoginView.swift */; };
 		8EB175282A4B658E00D99FBA /* addEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175272A4B658E00D99FBA /* addEmailView.swift */; };
 		8EB1752A2A4BDCDC00D99FBA /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175292A4BDCDC00D99FBA /* CreateUsernameView.swift */; };
+		8EB1752C2A4BDFA200D99FBA /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1752B2A4BDFA200D99FBA /* CreatePasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8EB175252A4B4DED00D99FBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8EB175272A4B658E00D99FBA /* addEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEmailView.swift; sourceTree = "<group>"; };
 		8EB175292A4BDCDC00D99FBA /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		8EB1752B2A4BDFA200D99FBA /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				8EB175252A4B4DED00D99FBA /* LoginView.swift */,
 				8EB175272A4B658E00D99FBA /* addEmailView.swift */,
 				8EB175292A4BDCDC00D99FBA /* CreateUsernameView.swift */,
+				8EB1752B2A4BDFA200D99FBA /* CreatePasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				8E39D0602A49E30E008D3659 /* InstagramAppApp.swift in Sources */,
 				8EB175242A4B463900D99FBA /* SearchView.swift in Sources */,
 				8EB1751E2A49F53300D99FBA /* UserStatView.swift in Sources */,
+				8EB1752C2A4BDFA200D99FBA /* CreatePasswordView.swift in Sources */,
 				8EB175202A4A693D00D99FBA /* FeedView.swift in Sources */,
 				8EB175192A49E96000D99FBA /* MainTabView.swift in Sources */,
 			);

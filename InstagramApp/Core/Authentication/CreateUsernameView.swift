@@ -30,7 +30,7 @@ struct CreateUsernameView: View {
             
             
             NavigationLink {
-                CreateUsernameView()
+                CreatePasswordView()
             } label: {
                 Text("Next")
                     .font(.subheadline)

@@ -1,17 +1,17 @@
 //
-//  addEmailView.swift
+//  CreatePasswordView.swift
 //  InstagramApp
 //
-//  Created by leonardo Moreira on 27/06/23.
+//  Created by leonardo Moreira on 28/06/23.
 //
 
 import SwiftUI
 
-struct addEmailView: View {
-    @State var email = ""
+struct CreatePasswordView: View {
+    @State private var password = ""
     var body: some View {
         VStack{
-            Text("Add your email")
+            Text("Create a password")
                 .font(.title2)
                 .bold()
             
@@ -22,7 +22,7 @@ struct addEmailView: View {
                 .multilineTextAlignment(.center)
             
             VStack{
-                TextField("Username", text: $email)
+                TextField("Password", text: $password)
                 
             }
             .padding(.top)
@@ -30,7 +30,7 @@ struct addEmailView: View {
             
             
             NavigationLink {
-                CreatePasswordView()
+                CreateUsernameView()
             } label: {
                 Text("Next")
                     .font(.subheadline)
@@ -47,8 +47,8 @@ struct addEmailView: View {
     }
 }
 
-struct addEmailView_Previews: PreviewProvider {
+struct CreatePasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        addEmailView()
+        CreatePasswordView()
     }
 }
