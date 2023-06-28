@@ -21,7 +21,7 @@ extension User {
     static var Mock_Users: [User] = [
         .init(id: NSUUID().uuidString, username: "Hulk", profileImageUrl: "foto1", fullname: "HULK", bio: "O INCRÍVEL HULK" , email: "Hulk@gmail.com"),
         
-        .init(id: NSUUID().uuidString, username: "Dog", profileImageUrl: "foto2", fullname: "Dog", bio: "O INCRÍVEL Dog" , email: "Dog@gmail.com"),
+        .init(id: NSUUID().uuidString, username: "Dog", profileImageUrl: "Foto2", fullname: "Dog", bio: "O INCRÍVEL Dog" , email: "Dog@gmail.com"),
         
         .init(id: NSUUID().uuidString, username: "Fantasma", profileImageUrl: "foto3", fullname: "Mascarado123", bio: "O MASCARADO" , email: "mascarado@gmail.com"),
         
