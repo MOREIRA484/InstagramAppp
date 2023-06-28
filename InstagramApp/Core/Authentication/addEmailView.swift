@@ -30,7 +30,7 @@ struct addEmailView: View {
             
             
             NavigationLink {
-                CreatePasswordView()
+               CreateUsernameView()
             } label: {
                 Text("Next")
                     .font(.subheadline)

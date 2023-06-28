@@ -1,5 +1,5 @@
 //
-//  CreatePasswordView.swift
+//  CompleteSingUpView.swift
 //  InstagramApp
 //
 //  Created by leonardo Moreira on 28/06/23.
@@ -7,32 +7,26 @@
 
 import SwiftUI
 
-struct CreatePasswordView: View {
-    @State private var password = ""
+struct CompleteSingUpView: View {
     var body: some View {
         VStack{
-            Text("Create a password")
+            Text("Welcome to Instagram, leonardo.moreira ")
                 .font(.title2)
                 .bold()
             
-            Text("You'll use this email to sign in to your")
+            Text("Click below to complete registration and start using Intagram")
                 .font(.footnote)
+                .multilineTextAlignment(.center)
                 .padding(.top, 1)
                 .foregroundColor(Color.gray)
-                .multilineTextAlignment(.center)
-            
-            VStack{
-                TextField("Password", text: $password)
                 
-            }
-            .padding(.top)
-            .padding(.leading, 50)
             
             
-            NavigationLink {
-                CompleteSingUpView()
+            
+            Button{
+                print("Complete sign Up")
             } label: {
-                Text("Next")
+                Text("Complete Sing Up")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
@@ -41,14 +35,15 @@ struct CreatePasswordView: View {
                     .cornerRadius(10)
             }
             .padding(.vertical)
-            Spacer()
+          
 
         }
+
     }
 }
 
-struct CreatePasswordView_Previews: PreviewProvider {
+struct CompleteSingUpView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatePasswordView()
+        CompleteSingUpView()
     }
 }

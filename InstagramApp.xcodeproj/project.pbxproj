@@ -23,6 +23,7 @@
 		8EB1752C2A4BDFA200D99FBA /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1752B2A4BDFA200D99FBA /* CreatePasswordView.swift */; };
 		8EB1752E2A4BE0ED00D99FBA /* CompleteSingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1752D2A4BE0ED00D99FBA /* CompleteSingUpView.swift */; };
 		8EB175302A4BFC1200D99FBA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1752F2A4BFC1200D99FBA /* User.swift */; };
+		8EB175322A4C051F00D99FBA /* CorrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175312A4C051F00D99FBA /* CorrentUserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		8EB1752B2A4BDFA200D99FBA /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		8EB1752D2A4BE0ED00D99FBA /* CompleteSingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSingUpView.swift; sourceTree = "<group>"; };
 		8EB1752F2A4BFC1200D99FBA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8EB175312A4C051F00D99FBA /* CorrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrentUserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				8EB1751A2A49ECF800D99FBA /* ProfileView.swift */,
+				8EB175312A4C051F00D99FBA /* CorrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				8EB1752A2A4BDCDC00D99FBA /* CreateUsernameView.swift in Sources */,
 				8EB175222A4A696700D99FBA /* FeedCell.swift in Sources */,
+				8EB175322A4C051F00D99FBA /* CorrentUserProfileView.swift in Sources */,
 				8EB175282A4B658E00D99FBA /* addEmailView.swift in Sources */,
 				8EB1751B2A49ECF800D99FBA /* ProfileView.swift in Sources */,
 				8E39D0622A49E30E008D3659 /* ContentView.swift in Sources */,
