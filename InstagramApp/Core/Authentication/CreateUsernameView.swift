@@ -1,17 +1,17 @@
 //
-//  addEmailView.swift
+//  CreateUsernameView.swift
 //  InstagramApp
 //
-//  Created by leonardo Moreira on 27/06/23.
+//  Created by leonardo Moreira on 28/06/23.
 //
 
 import SwiftUI
 
-struct addEmailView: View {
-    @State var email = ""
+struct CreateUsernameView: View {
+    @State private var username = ""
     var body: some View {
         VStack{
-            Text("Add your email")
+            Text("Create username")
                 .font(.title2)
                 .bold()
             
@@ -22,7 +22,7 @@ struct addEmailView: View {
                 .multilineTextAlignment(.center)
             
             VStack{
-                TextField("Username", text: $email)
+                TextField("Email", text: $username)
                 
             }
             .padding(.top)
@@ -47,8 +47,8 @@ struct addEmailView: View {
     }
 }
 
-struct addEmailView_Previews: PreviewProvider {
+struct CreateUsernameView_Previews: PreviewProvider {
     static var previews: some View {
-        addEmailView()
+        CreateUsernameView()
     }
 }

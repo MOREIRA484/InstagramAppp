@@ -19,6 +19,7 @@
 		8EB175242A4B463900D99FBA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175232A4B463900D99FBA /* SearchView.swift */; };
 		8EB175262A4B4DED00D99FBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175252A4B4DED00D99FBA /* LoginView.swift */; };
 		8EB175282A4B658E00D99FBA /* addEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175272A4B658E00D99FBA /* addEmailView.swift */; };
+		8EB1752A2A4BDCDC00D99FBA /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB175292A4BDCDC00D99FBA /* CreateUsernameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		8EB175232A4B463900D99FBA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8EB175252A4B4DED00D99FBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8EB175272A4B658E00D99FBA /* addEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEmailView.swift; sourceTree = "<group>"; };
+		8EB175292A4BDCDC00D99FBA /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				8EB175252A4B4DED00D99FBA /* LoginView.swift */,
 				8EB175272A4B658E00D99FBA /* addEmailView.swift */,
+				8EB175292A4BDCDC00D99FBA /* CreateUsernameView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB1752A2A4BDCDC00D99FBA /* CreateUsernameView.swift in Sources */,
 				8EB175222A4A696700D99FBA /* FeedCell.swift in Sources */,
 				8EB175282A4B658E00D99FBA /* addEmailView.swift in Sources */,
 				8EB1751B2A49ECF800D99FBA /* ProfileView.swift in Sources */,
