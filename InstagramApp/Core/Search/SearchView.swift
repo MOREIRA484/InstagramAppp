@@ -26,7 +26,9 @@ struct SearchView: View {
                                     Text(user.username)
                                         .fontWeight(.semibold)
                                     
-                                    Text(user.fullname)
+                                    if let fullname = user.fullname {
+                                        Text(fullname)
+                                    }
                                     
                                 }
                                 .font(.footnote)
@@ -41,10 +43,11 @@ struct SearchView: View {
                 .padding(.top)
                 .searchable(text: $searchText, prompt: "Search...")
             }
-            .navigationDestination(for: User.self, destination: {
+            .navigationDestination(for: User.self, destination:  {
                 user in
-                ProfileView()
+                ProfileView(user: user)
             })
+           
             .navigationTitle("explore")
             .navigationBarTitleDisplayMode(.inline)
         }

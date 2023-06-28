@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    private var gridItems: [GridItem] = [
+    let user: User
+    
+    var gridItems: [GridItem] = [
     
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
@@ -18,7 +20,7 @@ struct ProfileView: View {
     ]
     
     var body: some View {
-     //   NavigationStack {
+    
             ScrollView{
                 //HEADER
                 
@@ -26,7 +28,7 @@ struct ProfileView: View {
                     //PIC AND STATS
                     
                     HStack(spacing: 35){
-                        Image("leonardo")
+                        Image(user.profileImageUrl ?? "")
                             .resizable()
                             .edgesIgnoringSafeArea(.all)
                             .aspectRatio(contentMode: .fill)
@@ -87,25 +89,13 @@ struct ProfileView: View {
                 }
             }
             .navigationTitle("Profile")
-            .bold()
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        ()
-                    } label: {
-                        Image(systemName: "line.3.horizontal")
-                            .foregroundColor(Color.black)
-                    }
-                    
-                }
-            }
-       // }
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(user: User.Mock_Users [0])
+        
     }
 }
