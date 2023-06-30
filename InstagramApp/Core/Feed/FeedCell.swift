@@ -8,32 +8,37 @@
 import SwiftUI
 
 struct FeedCell: View {
+    
+    let post: Post
+    
     var body: some View {
         VStack{
             //IMAGEM + USERNAME
             
             HStack(spacing: 20){
                 
-                Image("leonardo")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(40)
-                
-                Text("Moreira")
-                    .font(.system(size: 15))
-                    .font(.footnote)
-                    .bold()
-                
-                
+                if let user = post.user {
+                    Image(user.profileImageUrl ?? "")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                    
+                    Text(user.username)
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    
+                    
+                }
+                Spacer()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            
             .padding(.leading, 10)
             
             
             //POST IMAGE
             
-            Image("Marvel")
+            Image(post.imageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -79,7 +84,7 @@ struct FeedCell: View {
             }
             //Likes label
             
-            Text("60 likes")
+            Text("\(post.likes) Likes")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -90,10 +95,10 @@ struct FeedCell: View {
             
             HStack(spacing: 10){
             
-                    Text("Moreira")
-                        .fontWeight(.semibold) +
+                Text("\(post.user?.username ?? "")")
+                        .fontWeight(.semibold) 
                 
-                 Text("Spider-Man")
+                Text(post.caption)
                 
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -115,6 +120,6 @@ struct FeedCell: View {
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
-        FeedCell()
+        FeedCell(post: Post.Mock_Posts[0])
     }
 }

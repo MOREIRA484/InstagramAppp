@@ -24,7 +24,7 @@ struct MainTabView: View {
                 }
 
             
-            Text("Upload Post")
+            UploadPostView()
             
                 .tabItem {
                     Image(systemName: "plus.square")
@@ -37,7 +37,7 @@ struct MainTabView: View {
                     Image(systemName: "heart")
                     
                 }
-          CorrentUserProfileView()
+            CorrentUserProfileView(user: User.Mock_Users[0])
                 .tabItem {
                     Image(systemName: "person")
                    
