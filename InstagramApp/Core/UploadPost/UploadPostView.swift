@@ -13,13 +13,17 @@ struct UploadPostView: View {
     @State private var caption = ""
     @State private var imagePickerPresented = false
     @StateObject var viewModel = UploadPostViewModel()
+    @Binding var tabIndex: Int
     var body: some View {
         VStack{
             
             //ACTION TOOL BAR
             HStack{
                 Button {
-                    print("Cancel upload")
+                    caption = ""
+                    viewModel.selectedImage = nil
+                    viewModel.postImage = nil
+                    tabIndex = 0
                 } label: {
                     Text("Cancel")
                 }
@@ -43,10 +47,15 @@ struct UploadPostView: View {
             
             // POST IMAGE AND CAPTION
             HStack(spacing: 8){
-                Image("foto3")
-                    .resizable()
-                    
-                    .frame(width: 100, height: 100)
+                 
+                if let image = viewModel.postImage {
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .clipped()
+                }
+                
                 
                 TextField("Enter your caption", text: $caption)
             }
@@ -63,6 +72,6 @@ struct UploadPostView: View {
 
 struct UploadPostView_Previews: PreviewProvider {
     static var previews: some View {
-        UploadPostView()
+        UploadPostView(tabIndex: .constant(0))
     }
 }
