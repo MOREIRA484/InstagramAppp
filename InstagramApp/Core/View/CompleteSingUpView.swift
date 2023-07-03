@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CompleteSingUpView: View {
+    @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: registroViewModel
     var body: some View {
         VStack{
             Text("Welcome to Instagram, leonardo.moreira ")
@@ -24,7 +26,7 @@ struct CompleteSingUpView: View {
             
             
             Button{
-                print("Complete sign Up")
+                Task { try await viewModel.createrUser() }
             } label: {
                 Text("Complete Sing Up")
                     .font(.subheadline)
