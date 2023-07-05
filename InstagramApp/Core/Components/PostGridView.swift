@@ -24,8 +24,8 @@ struct PostGridView: View {
     var body: some View {
         LazyVGrid(columns: gridItems, spacing: 0.5) {
             
-            ForEach(0...11, id: \.self) { index in
-                Image("Foto")
+            ForEach(0...2, id: \.self) { index in
+                Image("leonardo")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             }

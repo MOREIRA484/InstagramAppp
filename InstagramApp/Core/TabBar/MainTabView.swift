@@ -21,10 +21,10 @@ struct MainTabView: View {
                     
                 }.tag(0)
             
-           SearchView()
+            SearchView()
             
                 .onAppear {
-                    selectedIndex = 0
+                    selectedIndex = 1
                 }
             
                 .tabItem {

@@ -12,7 +12,7 @@ struct CompleteSingUpView: View {
     @EnvironmentObject var viewModel: registroViewModel
     var body: some View {
         VStack{
-            Text("Welcome to Instagram, leonardo.moreira ")
+            Text("Welcome to Instagram, \(viewModel.username)")
                 .font(.title2)
                 .bold()
             
